@@ -1,0 +1,39 @@
+html {
+  max-width: 720px;
+}
+
+.card-dark {
+  background: rgb(150, 147, 147);
+  margin: 5px;
+  padding: 5px;
+}
+
+.item {
+  color: rgb(9, 149, 30);
+}
+
+.item:first-child,
+.card-dark:first-child {
+  color: blue;
+}
+
+.item:last-child,
+.card-dark:last-child {
+  color: rgb(174, 7, 7);
+}
+
+.item:only-child {
+  color: yellow;
+}
+
+p:first-of-type {
+  color: blueviolet;
+}
+
+.item:last-of-type {
+  color: bisque;
+}
+
+.item:only-of-type {
+  color: rgb(105, 38, 3);
+}

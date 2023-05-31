@@ -1,0 +1,52 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+<div class='row p-3'>
+  <div class='card card-dark col-5'>
+    <h3 class='text-center'>1. First/Last child (працює не
+      лише до ul та li, обирає зі списку перший та останній
+      компонент)</h3>
+    <ul>
+      <li class='item'>First child</li>
+      <li class='item'>JustTest</li>
+      <li class='item'>JustTest</li>
+      <li class='item'>Last child</li>
+    </ul>
+  </div>
+  <div class='card card-dark col-5'>
+    <h3 class='text-center'>2. Only 1 child (працює коли
+      обгорнутий лише один тег всередині)</h3>
+    <ul>
+      <li class='item'>Only child</li>
+    </ul>
+  </div>
+  <div class='card card-dark col-12'>
+    <h3 class='text-center'>3. Селектор першого типу (по
+      типу тегу first-of-type перші теги які не
+      повторюються)</h3>
+    <div class='item'>First</div>
+    <div class='item'>Another way</div>
+    <p class='item'>Second</p>
+    <section class='item'>Third class</section>
+    <article class='item'>Last</article>
+    <p class='item'>Second/Last-of-time</p>
+    <p class='item'>Second/Last-of-time</p>
+  </div>
+  <div class='card card-dark col-12'>
+    <h3 class='text-center'>4. Селектор одного типу</h3>
+
+    <div class='item'>Only child</div>
+    <div class='item'>Third class</div>
+    <div class='item'>Last</div>
+    <strong class='item'>Test strong only-of-type</strong>
+    <p class='item'>Second</p>
+    <p class='item'>Second/Last-of-time</p>
+  </div>
+
+</div>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
