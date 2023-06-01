@@ -37,3 +37,61 @@ p:first-of-type {
 .item:only-of-type {
   color: rgb(105, 38, 3);
 }
+/* ===================================== */
+.input-dark {
+  background: rgb(85, 80, 80);
+}
+.input-dark[type='number'] {
+  background: rgb(6, 191, 53);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+/* .card.img {
+  height: 600px;
+} */
+a[rel~='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: rgb(194, 200, 7);
+}
+
+a[class^='btn'] {
+  background: rgb(116, 132, 128);
+}
+
+/* a[class*='btn'] {
+  background: rgb(8, 187, 166);
+}
+
+a[class$='big'] {
+  background: rgb(45, 11, 233);
+} */
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: blue;
+}
+
+/* .big-text::before {
+  content: '$$$';
+  color: green;
+} */
+
+.befor-after::after,
+.befor-after::before {
+  content: '$$$';
+  color: blue;
+  background: green;
+}
