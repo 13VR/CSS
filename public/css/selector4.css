@@ -38,7 +38,7 @@ input:focus {
 }
 
 .card:focus-within {
-  background: blue;
+  background: rgb(114, 238, 5);
 }
 
 .card:lang(en) > span::after {
