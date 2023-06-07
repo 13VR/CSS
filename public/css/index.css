@@ -1,0 +1,40 @@
+.card {
+  color: red;
+}
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:hover {
+  -webkit-text-fill-color: rgb(176, 33, 136);
+  -webkit-text-stroke: 1px blue;
+  direction: rtl;
+}
+
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+  text-align: justify;
+  letter-spacing: 10px;
+}
+span {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline dotted red;
+  /* text-decoration-color: blue; */
+}
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+  text-decoration-style: wavy;
+}
+
+pre {
+  letter-spacing: 5px;
+}
