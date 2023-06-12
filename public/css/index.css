@@ -54,3 +54,13 @@ span {
   font-weight: lighter;
   color: black;
 }
+.test {
+  display: none;
+}
+.block {
+  display: block;
+  background: rgb(214, 212, 212);
+  margin: auto;
+  width: fit-content;
+  border-radius: 10px;
+}
