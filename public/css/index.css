@@ -38,3 +38,19 @@ span:hover {
 pre {
   letter-spacing: 5px;
 }
+
+* {
+  font-family: 'Roboto', Arial sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
+}
+span {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+}
+.test {
+  font-weight: lighter;
+  color: black;
+}
