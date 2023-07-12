@@ -57,6 +57,11 @@
     width: 24px;
     background-image: url('/img/svg/arrow-right.svg');
   }
+  .icon_arrow_blue {
+    height: 14px;
+    width: 24px;
+    background-image: url('/img/svg/arrow_blue.svg');
+  }
   .page_section_light {
     background-color: var(--color-light);
   }
@@ -198,6 +203,148 @@ body {
   .features_grid-4 > .feat_card:first-of-type {
     grid-row: 1 / 3;
   }
+
+  /* ===================================================== */
+  .info_content {
+    padding-bottom: 150px;
+    background-image: url('/img/info.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .info_page {
+    display: grid;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: var(--spacing-3);
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .info_title {
+    font-size: var(--spacing-7);
+    max-width: fit-content;
+  }
+  .info_description {
+    font-size: var(--size-2);
+    line-height: var(--line-height);
+    max-width: 535px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .info_flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info_grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-3);
+    padding-left: 0;
+    max-width: 930px;
+    width: 100%;
+
+    color: var(--color-black);
+  }
+  .info_card {
+    padding: var(--spacing-3);
+    background-color: var(--color-white);
+    display: grid;
+    gap: var(--spacing-1);
+    font-size: var(--size-2);
+  }
+  .info_grid-3 > .info_card:first-of-type {
+    grid-row: 1 / 3;
+  }
+  .info_grid-3 > .info_card:nth-of-type(2) {
+    grid-row: 1 / 3;
+  }
+  .info_card_title {
+    display: flex;
+    align-items: center;
+  }
+  .connection_section {
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 48px;
+    justify-content: center;
+
+    gap: var(--spacing-8);
+    max-width: 1020px;
+    width: 100%;
+  }
+  .deliver {
+    display: flex;
+    align-self: center;
+    max-width: 556px;
+    max-height: 228px;
+  }
+  .connection_description {
+    font-size: var(--size-4);
+    line-height: var(--line-height);
+  }
+  .connection {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: var(--size-4);
+  }
+  .deliveroo {
+    max-width: 147px;
+    max-height: 39px;
+  }
+
+  /* ====================================== */
+
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer_title {
+    font-size: var(--size-6);
+    line-height: 38px;
+  }
+  .footer_card {
+    display: flex;
+    gap: 75px;
+  }
+  .card_botton {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-1);
+    max-width: 285px;
+    max-height: 420px;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  .card_botton_img {
+    max-width: 285px;
+    max-height: 208px;
+  }
+  .card_botton_name {
+    font-size: var(--size-1);
+    padding: 7px 12px;
+  }
+  .card_botton_title {
+    font-size: var(--size-3);
+    line-height: var(--line-height);
+    padding: 7px 12px;
+    max-height: max-content;
+    height: 100%;
+  }
+
+  .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: flex-end;
+  }
+  .footer_text {
+    color: #1264a3;
+    font-size: var(--size-1);
+  }
 }
 
 @layer adaptive {
@@ -213,6 +360,9 @@ body {
     .hero_image {
       height: 300px;
       left: 518px;
+    }
+    .info_content {
+      background: none;
     }
   }
   @media all and (width < 1000px) {
@@ -236,10 +386,37 @@ body {
     .features_section {
       background: none;
     }
+    .info_content {
+      background: none;
+    }
   }
-  @media all and (width < 600px) {
+  @media all and (width < 760px) {
     .features_grid-4 {
       grid-template-columns: 2fr 2fr;
+    }
+    .info_grid-3 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .connection_section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-4);
+    }
+    .connection,
+    .connection_description {
+      display: flex;
+      align-items: center;
+      line-height: 100%;
+
+      text-align: center;
+    }
+    .footer_title {
+      flex-wrap: wrap;
+    }
+    .footer_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   @media all and (width < 400px) {
@@ -249,6 +426,11 @@ body {
     .hero_buttons {
       grid-template-columns: 1fr;
       gap: var(--spacing-2);
+    }
+
+    .info_grid-3 {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
