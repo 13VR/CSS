@@ -166,9 +166,9 @@ body {
     display: grid;
     padding: var(--spacing-5);
     gap: var(--spacing-5);
-
+    align-items: flex-start;
     grid-row: 1 / 3;
-    max-height: 545px;
+    max-height: 570px;
   }
   .radio {
     display: flex;
