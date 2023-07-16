@@ -92,24 +92,22 @@
           </a>
 
           {{! <div class='relative click'>
-              <div class='field field--select'>
-                <span
-                  class='text text--light'
-                >Choose...</span>
-              </div>
-              <select class='field__select'>
-                <option value='dog'>Dog</option>
-                <option value='cat'>Cat</option>
-              </select>
-            </div> }}
+            <div class='field field--select'>
+              <span
+                class='text text--light'
+              >Choose...</span>
+            </div>
+            <select class='field__select'>
+              <option value='dog'>Dog</option>
+              <option value='cat'>Cat</option>
+            </select>
+          </div> }}
 
         </nav>
       </aside>
 
       <header class='header'>
-        <div
-          class='layout header__content text--small'
-        >analytic__content
+        <div class='layout header__content text--small'>
           <div class='header__search relative'>
             <input
               type='text'
@@ -219,21 +217,160 @@
           </section>
         </div>
 
-        <section class='checkout'>
-          <div class='box purchase'>
-            <div class='text text--heading'>Purchase list
+        <div class='layout'>
+          <section class='checkout'>
+            <div class='box purchase'>
+              <div class='text text--heading'>Purchase list
+              </div>
+              <div class='divider'></div>
+              <div class='purchase__info'>
+                <div>ID437661</div>
+                <div>AirOn ProCam</div>
+                <div>132.32 EUR</div>
+                <div>Customer</div>
+                <div>May 11, 2023, 14:21</div>
+                <div>7/8 USB Type-C</div>
+                <div
+                  class='id--info'
+                  style='color: var(--color-warning);'
+                >Not paid</div>
+                <div>robin@com.de</div>
+              </div>
+              <div class='divider'></div>
+              <div class='purchase__info'>
+                <div>ID437661</div>
+                <div>PHILIPS Essential</div>
+                <div>543 USD</div>
+                <div>Customer</div>
+                <div>May 11, 2023, 14:21</div>
+                <div>HD9200/90</div>
+                <div
+                  class='id--info'
+                  style='color: var(--color-success);'
+                >Pay by Stripe</div>
+                <div>dima@com.ua</div>
+              </div>
             </div>
-            <div class='divider'></div>
-            <div class='purchase__info'></div>
-          </div>
 
-          <div class='box payment'>
-            <div class='text text--heading'>Payment
+            <div class='box payment'>
+              <div class='text text--heading'>Payment
+              </div>
+              <div class='divider'></div>
+              <div class='checkbox'>
+                <div class='radio'>
+                  <input
+                    type='radio'
+                    class='radio text'
+                    value='Credit card'
+                    checked
+                  />
+                  <label for='radio'>Credit card</label>
+                </div>
+                <div class='radio'>
+                  <input type='radio' class='radio text' />
+                  <label for='radio'>Debit card</label>
+                </div>
+                <div class='radio'>
+                  <input type='radio' class='radio text' />
+                  <label for='radio'>PayPal</label>
+                </div>
+              </div>
+              <div class='input__payment'>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >Name on card</label>
+                  <input
+                    type='text'
+                    class='text field__card'
+                  />
+                </div>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >Credit card number</label>
+                  <input
+                    type='text'
+                    class='text field__card'
+                  />
+                </div>
+              </div>
+              <div class='input__payment'>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >Expiration </label>
+                  <input
+                    type='text'
+                    class='text field__card'
+                  />
+                </div>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >CVV</label>
+                  <input
+                    type='text'
+                    class='text field__card'
+                  />
+                </div>
+              </div>
+
+              <div class='divider'></div>
+
+              <div class='input__payment'>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >Country</label>
+                  <div class='relative click'>
+                    <div class='field field--select'>
+                      <span
+                        class='text text--dark'
+                      >Choose...</span>
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Dog</option>
+                      <option value='cat'>Cat</option>
+                    </select>
+                    <span
+                      class='select--icon'
+                      style='background-image: url("/img/svg/select/select.svg");'
+                    ></span>
+                  </div>
+                </div>
+                <div class='cards--data'>
+                  <label
+                    for=''
+                    class='text input--title'
+                  >State</label>
+                  <div class='relative click'>
+                    <div class='field field--select'>
+                      <span
+                        class='text text--dark'
+                      >Choose...</span>
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Dog</option>
+                      <option value='cat'>Cat</option>
+                    </select>
+                    <span
+                      class='select--icon'
+                      style='background-image: url("/img/svg/select/select.svg");'
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <button class='checkout--button'>Continue to
+                checkout</button>
             </div>
-            <div class='divider'></div>
-            <div class='checkbox'></div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
     </div>
